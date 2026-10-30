@@ -1,0 +1,30 @@
+# Default value for any setting (new players). Use ON / OFF / ANYONE / FRIENDS.
+# Key = setting name in lowercase. Example:
+# defaults:
+#   fast_crystals: ON
+defaults: {}
+
+# Commands (from other plugins) that are checked against the TARGET's privacy settings.
+# The first argument must be the target player's name.
+guarded-commands:
+  private-message: [msg, tell, w, whisper, m, pm, t]
+  teleport-request: [tpa, tpask, call, etpa]
+  teleport-here-request: [tpahere, etpahere, tpaskhere]
+  payment: [pay, epay]
+
+combat:
+  duration-seconds: 15
+
+general:
+  task-interval-ticks: 100   # how often Night Vision / mob / phantom spawning runs
+
+mob-spawns:
+  per-cycle: 2
+  max-nearby: 8
+  min-distance: 10
+  max-distance: 24
+  types: [ZOMBIE, SKELETON, SPIDER, CREEPER]
+
+phantom-spawns:
+  per-cycle: 1
+  max-nearby: 3
